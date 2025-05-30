@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Design Inspirations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Rubik', sans-serif;
+      background: #fbd2e0; /* soft pink */
+      margin: 0;
+      padding: 0;
+      color: #4b2a44;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background: #cce6f4; /* soft blue */
+      width: 100%;
+      padding: 1.5rem 0;
+      text-align: center;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+    }
+    .card {
+      background: white;
+      border-radius: 25px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      user-select: none;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    }
+    .card img {
+      max-width: 100%;
+      height: 140px;
+      border-radius: 20px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px #fbd2e0;
+    }
+    .card h2 {
+      margin: 0.5rem 0;
+      font-size: 1.3rem;
+      color: #a64d79;
+    }
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      color: #6b3a58;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .links a {
+      background: #a64d79;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+      font-size: 0.9rem;
+    }
+    .links a:hover {
+      background: #7a3f5a;
+    }
+    nav {
+      margin: 1rem;
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #a64d79;
+      font-weight: 700;
+      font-size: 1rem;
+      margin: 0 1rem;
+      padding: 0.3rem 1rem;
+      border: 2px solid #a64d79;
+      border-radius: 50px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav a:hover {
+      background: #a64d79;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Graphic Design Inspirations 🎨✨</h1>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="interactive.html">🎮 Play & Learn</a>
+  <a href="cat-designer.html">🐱 Cat Designer</a>
+</nav>
+
+<main>
+
+  <section class="card" tabindex="0" role="button" aria-pressed="false" onclick="window.open('https://jessicawalsh.com/', '_blank')" onkeypress="if(event.key==='Enter'){this.click()}">
+    <img src="https://jessicawalsh.com/favicon.ico" alt="Jessica Walsh" />
+    <h2>Jessica Walsh</h2>
+    <p>Known for bold, vibrant, and fearless design. I love her daring use of color and emotion.</p>
+    <div class="links">
+      <a href="https://jessicawalsh.com/" target="_blank" rel="noopener noreferrer">See Her Work</a>
+    </div>
+  </section>
+
+  <section class="card" tabindex="0" role="button" aria-pressed="false" onclick="window.open('https://www.mikeperry.net/', '_blank')" onkeypress="if(event.key==='Enter'){this.click()}">
+    <img src="https://cdn.dribbble.com/users/23036/avatars/small/9e20d7b78e15294410ca9f6a4db12f4f.jpg?1648119811" alt="Mike Perry" />
+    <h2>Mike Perry</h2>
+    <p>Fun, wild, and psychedelic visuals. His work inspires me to be fearless and playful.</p>
+    <div class="links">
+      <a href="https://www.mikeperry.net/" target="_blank" rel="noopener noreferrer">See His Work</a>
+    </div>
+  </section>
+
+  <section class="card" tabindex="0" role="button" aria-pressed="false" onclick="window.open('https://thenounproject.com/sofya-polyakov/', '_blank')" onkeypress="if(event.key==='Enter'){this.click()}">
+    <img src="https://thenounproject.com/favicon.ico" alt="Sofya Polyakov" />
+    <h2>Sofya Polyakov</h2>
+    <p>Clean, cute icon design and UI/UX magic. She teaches me the power of simple shapes and clarity.</p>
+    <div class="links">
+      <a href="https://thenounproject.com/sofya-polyakov/" target="_blank" rel="noopener noreferrer">Visit Profile</a>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
