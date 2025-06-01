@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Path To Achieving My Dreams Career </title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Path To Achieving My Dream Career</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <style>
-    /* Basic Reset */
-    * {
-      box-sizing: border-box;
-    }
+    /* Reset & Struktur Utama */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Rubik', sans-serif;
-      background: #cce6f4; /* soft blue */
-      margin: 0;
-      padding: 0;
+      background: #cce6f4;
       color: #444;
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
     }
+    
+    /* Header */
     header {
-      background: #fbd2e0; /* soft pink */
+      background: #fbd2e0;
       width: 100%;
       padding: 1.5rem 0;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       text-align: center;
       border-bottom-left-radius: 25px;
       border-bottom-right-radius: 25px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-      color: #333;
+    header h1 { font-size: 1.8rem; color: #333; }
+
+    /* Navigasi */
+    nav {
+      background: #fbd2e0;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 15px;
+      margin-top: 10px;
     }
+    nav a {
+      margin: 0 10px;
+      color: #7a3f5a;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #a64d79; text-decoration: underline; }
+
+    /* Main Content */
     main {
       max-width: 600px;
       background: white;
@@ -50,17 +64,15 @@
       margin-bottom: 1rem;
       box-shadow: 0 0 10px #fbd2e0;
     }
-    main p {
-      font-size: 1.1rem;
-      line-height: 1.5;
-      margin-bottom: 1.5rem;
-    }
+    main p { font-size: 1.1rem; line-height: 1.5; margin-bottom: 1.5rem; }
     .quote {
       font-style: italic;
-      margin-bottom: 2rem;
       color: #a64d79;
       font-weight: 600;
+      margin-bottom: 2rem;
     }
+
+    /* Butang Interaktif */
     .btn-group {
       display: flex;
       justify-content: center;
@@ -75,32 +87,36 @@
       padding: 0.8rem 1.6rem;
       border-radius: 50px;
       font-weight: 700;
-      box-shadow: 0 6px 0 #a64d79;
       transition: all 0.3s ease;
       user-select: none;
       display: inline-flex;
       align-items: center;
       gap: 0.6rem;
       font-size: 1rem;
+      box-shadow: 0 6px 0 #a64d79;
     }
     a.button:hover {
-      background: #a64d79;
+      background: linear-gradient(45deg, #a64d79, #fbd2e0);
       color: white;
       box-shadow: 0 2px 0 #6b2e49;
       transform: translateY(3px);
     }
-    /* Emoji style */
-    .emoji {
-      font-size: 1.3rem;
+
+    /* Responsif */
+    @media (max-width: 768px) {
+      main { padding: 1rem; max-width: 90%; }
+      header h1 { font-size: 1.5rem; }
     }
+
+    /* Footer */
     footer {
       background: #fbd2e0;
       width: 100%;
       text-align: center;
       padding: 1rem 0;
-      margin-top: auto;
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
+      margin-top: auto;
     }
     footer a {
       color: #7a3f5a;
@@ -108,29 +124,51 @@
       margin: 0 0.5rem;
       font-weight: 600;
     }
-    footer a:hover {
-      text-decoration: underline;
-    }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>The Path to Success: Achieving Your Career Dreams</h1>
+  <h1>🐾The Path To Achieving My Dream Career</h1>
 </header>
 
+<!-- Navigasi -->
+<nav style="
+  background: #fbd2e0; 
+  padding: 1rem; 
+  text-align: center; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+">
+  <a href="index.html" style="margin: 0 10px; color: #7a3f5a; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; border-radius: 50px; border: 2px solid #a64d79; transition: all 0.3s;">
+    🏠 Home
+  </a>
+  <a href="inspiration.html" style="margin: 0 10px; color: #7a3f5a; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; border-radius: 50px; border: 2px solid #a64d79; transition: all 0.3s;">
+    🎨 Inspirations
+  </a>
+   <a href="steps.html" style="margin: 0 10px; color: #7a3f5a; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; border-radius: 50px; border: 2px solid #a64d79; transition: all 0.3s;">
+    📜 Steps By Step
+  </a>
+  <a href="interactive.html" style="margin: 0 10px; color: #7a3f5a; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; border-radius: 50px; border: 2px solid #a64d79; transition: all 0.3s;">
+    🎮 Play & Learn
+  </a>
+</nav>
+
+<!-- Kandungan Utama -->
 <main>
-  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Graphic designer avatar" />
+  <img src="https://i.imgur.com/gYWQosP.png" alt="Graphic designer avatar">
   <p>Hi! I’m <strong>kiasatina</strong>, and I dream of becoming a <strong>graphic designer</strong>. I love creating playful and colorful designs that tell stories and make people smile. 🎨✨</p>
   <p class="quote">“Do not wait to strike till the iron is hot; but make it hot by striking.”</p>
 
   <div class="btn-group">
     <a href="inspiration.html" class="button">👩‍🎨 Meet My Inspirations</a>
+    <a href="stepbystep.html" class="button">🍉 Step By Step</a>
     <a href="interactive.html" class="button">🎮 Play & Learn Design</a>
   </div>
 
-  <!-- My Skills Section -->
-  <section style="margin-bottom: 2rem;">
+  <!-- Kemahiran -->
+  <section>
     <h2 style="color:#a64d79;">🛠 My Skills</h2>
     <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
       <li>🎨 Adobe Illustrator & Photoshop</li>
@@ -140,7 +178,7 @@
     </ul>
   </section>
 
-  <!-- Design Gallery Section -->
+  <!-- Galeri Rekaan -->
   <section>
     <h2 style="color:#a64d79;">🖼 Design Previews</h2>
     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;">
@@ -150,7 +188,7 @@
     </div>
   </section>
 
-  <!-- Contact Me Button -->
+  <!-- Hubungi Saya -->
   <div style="margin-top: 2rem;">
     <a href="mailto:kiasatina14@email.com" class="button">📩 Contact Me</a>
   </div>
@@ -158,8 +196,8 @@
 
 <!-- Footer -->
 <footer>
-  <p style="margin: 0;">Let's connect! 💕</p>
-  <div style="margin-top: 0.5rem;">
+  <p>Let's connect! 💕</p>
+  <div>
     <a href="https://instagram.com/kynxxs">📸 Instagram</a>
     <a href="https://dribbble.com/kiasatina">🏀 Dribbble</a>
     <a href="https://github.com/kiasatina-231420054">💻 GitHub</a>
