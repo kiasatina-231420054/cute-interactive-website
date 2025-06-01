@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Design Inspirations</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <style>
+     /* Reset & Struktur Utama */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Rubik', sans-serif;
-      background: #fbd2e0; /* soft pink */
-      margin: 0;
-      padding: 0;
-      color: #4b2a44;
-      min-height: 100vh;
+      background: #cce6f4;
+      color: #444;
       display: flex;
       flex-direction: column;
       align-items: center;
+      min-height: 100vh;
     }
+    
+    /* Header */
     header {
-      background: #cce6f4; /* soft blue */
+      background: #fbd2e0;
       width: 100%;
       padding: 1.5rem 0;
       text-align: center;
       border-bottom-left-radius: 25px;
       border-bottom-right-radius: 25px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
+    header h1 { font-size: 1.8rem; color: #333; }
+
+    
+      /* Navigasi */
+    nav {
+      background: #fbd2e0;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 15px;
+      margin-top: 10px;
     }
+    nav a {
+      margin: 0 10px;
+      color: #7a3f5a;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #a64d79; text-decoration: underline; }
+
+    /* Grid untuk kad inspirasi */
     main {
       max-width: 800px;
       margin: 2rem 1rem;
@@ -60,56 +80,37 @@
       margin-bottom: 1rem;
       box-shadow: 0 0 10px #fbd2e0;
     }
-    .card h2 {
-      margin: 0.5rem 0;
-      font-size: 1.3rem;
-      color: #a64d79;
+    .card h2 { font-size: 1.3rem; color: #a64d79; }
+    .card p { font-size: 0.95rem; color: #6b3a58; }
+
+    /* Animasi halus */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
     }
-    .card p {
-      font-size: 0.95rem;
-      line-height: 1.4;
-      margin-bottom: 1rem;
-      color: #6b3a58;
+    .card {
+      animation: fadeIn 0.6s ease-in-out;
     }
-    .links {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-    .links a {
-      background: #a64d79;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s ease;
-      font-size: 0.9rem;
-    }
-    .links a:hover {
-      background: #7a3f5a;
-    }
-    nav {
-      margin: 1rem;
+
+    /* Footer */
+    footer {
+      background: #fbd2e0;
       width: 100%;
-      max-width: 800px;
       text-align: center;
+      padding: 1rem 0;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+      margin-top: auto;
     }
-    nav a {
+    footer p { font-size: 1rem; margin: 0; }
+    footer a {
+      color: #7a3f5a;
       text-decoration: none;
-      color: #a64d79;
-      font-weight: 700;
-      font-size: 1rem;
-      margin: 0 1rem;
-      padding: 0.3rem 1rem;
-      border: 2px solid #a64d79;
-      border-radius: 50px;
-      transition: background 0.3s ease, color 0.3s ease;
+      margin: 0 0.5rem;
+      font-weight: 600;
     }
-    nav a:hover {
-      background: #a64d79;
-      color: white;
-    }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -118,41 +119,58 @@
   <h1>My Graphic Design Inspirations 🎨✨</h1>
 </header>
 
-<nav>
-  <a href="index.html">🏠 Home</a>
-  <a href="interactive.html">🎮 Play & Learn</a>
+<!-- Navigasi -->
+<nav style="
+  background: #fbd2e0; 
+  padding: 1rem; 
+  text-align: center; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+">
+  <a href="index.html" style="margin: 0 10px; color: #7a3f5a; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; border-radius: 50px; border: 2px solid #a64d79; transition: all 0.3s;">
+    🏠 Home
+  </a>
+  <a href="inspiration.html" style="margin: 0 10px; color: #7a3f5a; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; border-radius: 50px; border: 2px solid #a64d79; transition: all 0.3s;">
+    🎨 Inspirations
+  </a>
+   <a href="steps.html" style="margin: 0 10px; color: #7a3f5a; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; border-radius: 50px; border: 2px solid #a64d79; transition: all 0.3s;">
+    📜 Steps By Step
+  </a>
+  <a href="interactive.html" style="margin: 0 10px; color: #7a3f5a; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; border-radius: 50px; border: 2px solid #a64d79; transition: all 0.3s;">
+    🎮 Play & Learn
+  </a>
 </nav>
 
 <main>
 
-  <section class="card" tabindex="0" role="button" aria-pressed="false" onclick="window.open('https://jessicawalsh.com/', '_blank')" onkeypress="if(event.key==='Enter'){this.click()}">
-    <img src="https://www.oneclub.org/images/userfiles/images/articles/2019_August/jwalshheadshot.jpg" alt="Jessica Walsh" />
+  <section class="card" tabindex="0" role="button" onclick="window.open('https://jessicawalsh.com/', '_blank')">
+    <img src="https://www.oneclub.org/images/userfiles/images/articles/2019_August/jwalshheadshot.jpg" alt="Jessica Walsh">
     <h2>Jessica Walsh</h2>
-    <p>Known for bold, vibrant, and fearless design. I love her daring use of color and emotion.</p>
-    <div class="links">
-      <a href="https://jessicawalsh.com/" target="_blank" rel="noopener noreferrer">See Her Work</a>
-    </div>
+    <p>Known for bold, vibrant, and fearless design.</p>
   </section>
 
-  <section class="card" tabindex="0" role="button" aria-pressed="false" onclick="window.open('https://www.mikeperry.net/', '_blank')" onkeypress="if(event.key==='Enter'){this.click()}">
-    <img src="https://cdn.dribbble.com/users/23036/avatars/small/9e20d7b78e15294410ca9f6a4db12f4f.jpg" alt="Mike Perry" />
+  <section class="card" tabindex="0" role="button" onclick="window.open('https://www.mikeperry.net/', '_blank')">
+    <img src="https://images.squarespace-cdn.com/content/v1/622f571ccff2d902c7cf6103/7035e20f-0a1d-447f-a448-1678a693a616/MIKE_PERRY_Duck_12I9927_02.jpg" alt="Mike Perry">
     <h2>Mike Perry</h2>
-    <p>Fun, wild, and psychedelic visuals. His work inspires me to be fearless and playful.</p>
-    <div class="links">
-      <a href="https://www.mikeperry.net/" target="_blank" rel="noopener noreferrer">See His Work</a>
-    </div>
+    <p>Fun, wild, and psychedelic visuals.</p>
   </section>
 
-  <section class="card" tabindex="0" role="button" aria-pressed="false" onclick="window.open('https://thenounproject.com/sofya-polyakov/', '_blank')" onkeypress="if(event.key==='Enter'){this.click()}">
-    <img src="https://thenounproject.com/favicon.ico" alt="Sofya Polyakov" />
+  <section class="card" tabindex="0" role="button" onclick="window.open('https://thenounproject.com/sofya-polyakov/', '_blank')">
+    <img src="https://thenounproject.com/favicon.ico" alt="Sofya Polyakov">
     <h2>Sofya Polyakov</h2>
-    <p>Clean, cute icon design and UI/UX magic. She teaches me the power of simple shapes and clarity.</p>
-    <div class="links">
-      <a href="https://thenounproject.com/sofya-polyakov/" target="_blank" rel="noopener noreferrer">Visit Profile</a>
-    </div>
+    <p>Clean, cute icon design and UI/UX magic.</p>
   </section>
 
 </main>
+
+<footer>
+  <p>Let's connect! 💕</p>
+  <div>
+    <a href="https://instagram.com/kynxxs">📸 Instagram</a>
+    <a href="https://dribbble.com/kiasatina">🏀 Dribbble</a>
+    <a href="https://github.com/kiasatina-231420054">💻 GitHub</a>
+  </div>
+</footer>
 
 </body>
 </html>
